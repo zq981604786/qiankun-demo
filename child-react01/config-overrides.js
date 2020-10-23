@@ -8,6 +8,8 @@ module.exports = {
   devServer: function (configFunction) {
     return function (proxy, allowedHost) {
       const config = configFunction(proxy, allowedHost);
+      config.open = false;
+      config.hot = false;
       config.headers = {
         "Access-Control-Allow-Origin": "*",
       };

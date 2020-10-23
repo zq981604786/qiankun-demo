@@ -1,0 +1,30 @@
+{
+  "name": "qiankun-01",
+  "version": "1.0.0",
+  "description": "## 主",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:qiankun-base": "cd qiankun-base && cnpm i",
+    "install:child-vue01": "cd child-vue01 && cnpm i",
+    "install:child-react01": "cd child-react01 && cnpm i",
+    "start": "npm-run-all --parallel start:*",
+    "start:qiankun-base": "cd qiankun-base && npm run serve",
+    "start:child-vue01": "cd child-vue01 && npm run serve",
+    "start:child-react01": "cd child-react01 && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zq981604786/qiankun-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zq981604786/qiankun-demo/issues"
+  },
+  "homepage": "https://github.com/zq981604786/qiankun-demo#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
